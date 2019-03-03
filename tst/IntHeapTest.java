@@ -1,11 +1,11 @@
-import intheap.IntHeap;
+import intheap.IntBinaryHeap;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Random;
 
 /**
- * Tests IntHeap
+ * Tests IntBinaryHeap
  */
 public class IntHeapTest {
     //get random based on numItems except 0
@@ -24,7 +24,7 @@ public class IntHeapTest {
     public void insertTest() {
         // Test program
         int numItems = 50;
-        IntHeap h = new IntHeap();
+        IntBinaryHeap h = new IntBinaryHeap();
         for (int i = 0; i < numItems; i++) {
             h.insert(getRandomData(numItems));
             Assert.assertTrue(h.toString() + "is incorrect", h.isCorrect());
@@ -34,7 +34,7 @@ public class IntHeapTest {
     @Test
     public void deleteMinTest() {
         int numItems = 50;
-        IntHeap h = new IntHeap();
+        IntBinaryHeap h = new IntBinaryHeap();
         for (int i = 0; i < numItems; i++) {
             h.insert(getRandomData(numItems));
         }
