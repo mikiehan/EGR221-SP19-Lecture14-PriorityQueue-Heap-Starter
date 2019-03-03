@@ -1,4 +1,4 @@
-package intheap;// IntBinaryHeap class
+package intheap;// IntHeap class
 //
 // CONSTRUCTION: with optional capacity (that defaults to 100)
 //               or an array containing initial items
@@ -20,7 +20,7 @@ import utils.UnderflowException;
  * @author Mikyung Han
  * @version SP 2017
  */
-public class IntBinaryHeap {
+public class IntHeap {
     private static final int DEFAULT_CAPACITY = 100;
     private int currentSize;      // Number of elements in heap
     private int[] array; // The heap array
@@ -30,14 +30,14 @@ public class IntBinaryHeap {
      *
      * @param capacity the capacity of the binary heap.
      */
-    public IntBinaryHeap(int capacity) {
+    public IntHeap(int capacity) {
         //Implement this method
     }
 
     /**
      * Construct the binary heap given an array of items.
      */
-    public IntBinaryHeap(int[] items, int capacity) {
+    public IntHeap(int[] items, int capacity) {
         //Implement this method
         //This method will use buildHeap helper method
     }
@@ -123,7 +123,7 @@ public class IntBinaryHeap {
     /**
      * Construct the binary heap.
      */
-    public IntBinaryHeap() {
+    public IntHeap() {
         this(DEFAULT_CAPACITY);
     }
 

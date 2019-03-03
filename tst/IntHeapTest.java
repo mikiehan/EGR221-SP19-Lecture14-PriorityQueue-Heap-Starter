@@ -1,4 +1,4 @@
-import intheap.IntBinaryHeap;
+import intheap.IntHeap;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -24,7 +24,7 @@ public class IntHeapTest {
     public void insertTest() {
         // Test program
         int numItems = 50;
-        IntBinaryHeap h = new IntBinaryHeap();
+        IntHeap h = new IntHeap();
         for (int i = 0; i < numItems; i++) {
             h.insert(getRandomData(numItems));
             Assert.assertTrue(h.toString() + "is incorrect", h.isCorrect());
@@ -34,7 +34,7 @@ public class IntHeapTest {
     @Test
     public void deleteMinTest() {
         int numItems = 50;
-        IntBinaryHeap h = new IntBinaryHeap();
+        IntHeap h = new IntHeap();
         for (int i = 0; i < numItems; i++) {
             h.insert(getRandomData(numItems));
         }
